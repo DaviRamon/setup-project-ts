@@ -1,6 +1,6 @@
 import Person from ".";
 
-it("should sum", () => {
+it("should say my name", () => {
   const person = new Person();
-  expect(person.saymyName()).toBe("Hello World!");
+  expect(person.saymyName()).toBe("Heisemberg");
 });

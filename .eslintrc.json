@@ -20,5 +20,7 @@
     "plugins": [
         "@typescript-eslint"
     ],
-    "rules": {}
+    "rules": {
+        "eslint@typescript-eslint/no-unused-vars": "error"
+    }
 }

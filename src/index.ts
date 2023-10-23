@@ -1,11 +1,11 @@
-import Tree from "@/one/two/tree/tree";
+import * as express from "express";
+import { Request, Response } from "express";
+import Person from "./one/two/tree/person";
 
-class Person {
-  saymyName() {
-    return "Heisemberg!!";
-  }
-}
+const app = express();
 
-console.log(new Tree().log());
+app.get("/", (req: Request, res: Response) => {
+  res.send(new Person().sayMyName());
+});
 
-export default Person;
+app.listen(3000, () => console.log("listening on port 3000!"));

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts",
-    "husky:prepare": "husky install"
+    "husky:prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "eslint": "eslint",
+    "prettier": "prettier"
   },
   "keywords": [],
   "author": "",
